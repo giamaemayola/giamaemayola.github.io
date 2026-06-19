@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(to right, #5D1C6A, #5D1C6A, #982598);
+    color:white;
+}
+
+/* Navigation */
+nav{
+    background:#4b0082;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+    min-height:100vh;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* Home */
+.home{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.home img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+.home h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.home h3{
+    margin-bottom:20px;
+}
+
+.home p{
+    max-width:700px;
+    font-size:20px;
+}
+
+/* About */
+.about-box{
+    background:white;
+    color:black;
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    text-align:justify;
+    line-height:1.8;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Cards */
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    color:#4b0082;
+    padding:12px 25px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* Contact */
+.contact-box{
+    background:white;
+    color:black;
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.contact-box a{
+    color:#4b0082;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background:#4b0082;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificate">Certificates</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<section id="home" class="home">
+
+    <img src="pic.jpg" alt="Profile Picture">
+
+    <h1>MAYOLA GIA MAE</h1>
+
+    <h3>Bachelor of Science in Information Systems Student</h3>
+
+    <p>
+        Welcome to my online portfolio. I am a Bachelor of Science in Information Systems student with a passion for technology and digital innovation. This portfolio showcases my skills, projects, achievements, and experiences as I continue to learn and grow in the field of information systems.
+
+    </p>
+
+</section>
+
+<!-- About -->
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-box">
+
+        <p>
+            Hello! I am <strong>Gia Mae C. Mayola</strong>, a Bachelor of Science in Information Systems student with a strong interest in technology, innovation, and digital transformation. I am committed to expanding my knowledge and skills in the field of information systems and applying them to develop effective solutions for real-world challenges.
+
+        </p>
+
+        <br>
+
+        <p>
+            Throughout my academic journey, I have gained foundational knowledge in web development, database management, systems analysis and design, and project management. These experiences have strengthened my technical, analytical, and problem-solving abilities while preparing me for future opportunities in the information technology industry.
+        </p>
+
+        <br>
+
+        <p>
+            As an aspiring Information Systems professional, I aim to contribute to organizations by developing efficient technology-driven solutions, embracing continuous learning, and supporting innovation. I am dedicated to professional growth and to making a positive impact through the effective use of technology.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Certificates -->
+<section id="certificate">
+
+    <h2>Certificates</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="Cert.jpg" alt="Certificate 1">
+            <h3>Completion Certificate</h3>
+            <p>On the Job Training</p>
+        </div>
+
+        <div class="card">
+            <img src="Python_Essentials1.jpg" alt="Certificate 2">
+            <h3>Cisco Certificate</h3>
+            <p>Python Essentials 1</p>
+        </div>
+
+        <div class="card">
+            <img src="Python_Essentials2.jpg" alt="Certificate 3">
+            <h3>Cisco Certificate</h3>
+            <p>Python Essentials 2</p>
+        </div>
+
+        <div class="card">
+            <img src="Exhibitcert.jpg" alt="Certificate 4">
+            <h3>Capstone Project Certificate</h3>
+            <p>Capstone Project Exhibit</p>
+        </div>
+
+        <div class="card">
+            <img src="Communication Service cert.jpg" alt="Certificate 5">
+            <h3>Tree Planting Project Certificate</h3>
+            <p>Community Service Certificate</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Projects -->
+<section id="project">
+
+    <h2>Projects</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="LMS.jpg" alt="Project 1">
+            <h3>Learning Management System</h3>
+            <p>
+                A web-based Learning Management System developed for
+                Quezon National High School to improve teaching and learning.
+            </p>
+
+        </div>
+
+        <div class="card">
+            <video width="250" height="180" controls>
+    <source src="animation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+            <h3>AI animation</h3>
+            <p>
+                Promoting KusinaUniversity Offers
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="Healthyshot1.jpg" alt="Project 3">
+            <h3> AI Image</h3>
+            <p>
+                Prompting AI photoes to promote KusinaUniversity Product
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Skills -->
+<section id="skill">
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">PHOTO EDITING</div>
+        <div class="skill">VIDEO EDITING</div>
+        <div class="skill">COMPUTER LETERATE</div>
+        <div class="skill">GRAPHIC DESIGNER</div>
+       
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+
+        <p><strong>Name:</strong> GIA MAE C. MAYOLA </p>
+        <br>
+
+        <p><strong>Email:</strong> mayolagiamae@gmail.com</p>
+        <br>
+
+        <p><strong>Phone:</strong> 09663525363</p>
+        <br>
+
+        <p>
+            <strong>Facebook:</strong>
+            <a href="https://www.facebook.com/" target="_blank">
+                Gia Mae Caliao Mayola
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 MAYOLA GIA MAE | Bachelor of Science in Information Systems Student Portfolio</p>
+</footer>
+
+</body>
+</html>
